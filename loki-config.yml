@@ -9,12 +9,3 @@ ingester:
       kvstore:
         store: inmemory
       replication_factor: 1
-
-scrape_config:
-  - job_name: local-logs
-    static_configs:
-      - targets:
-          - localhost
-        labels:
-          job: varlogs
-          __path__: /home/arsokolov/cicd_6/log.log
